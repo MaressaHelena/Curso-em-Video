@@ -13,9 +13,8 @@
 ### multiplicação
 ```py
 * # usado para multiplicar
-```
-#### exemplo:
-```py
+
+# exemplo: 
 m = 5*2
 print(m)
 ```
