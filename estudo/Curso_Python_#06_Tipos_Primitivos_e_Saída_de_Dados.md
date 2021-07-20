@@ -53,4 +53,11 @@ print(n.isalpha()) # caso eu digite: 3a. False. O 3 é numerico
 n = input('Digite algo: ')
 print(n.isalnum()) # se eu digitar: 3a. Vai retornar True, pois '3a' é alfa numerico, (3 é numerico e a é alfa(letra))
 
+############################################################################################################################
+ # >>> função .isupper()
+
+# caso eu digite:
+
+n = input('Digite algo: ')
+print(n.isupper()) # .isupper verifica se a informação que eu inseri foi escrita com letras maiusculas. Caso sim, o output dará True
 ```
