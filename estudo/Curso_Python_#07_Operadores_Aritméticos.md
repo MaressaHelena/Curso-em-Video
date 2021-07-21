@@ -55,3 +55,29 @@ print(5//2)
 # exemplo: 
 print(5%2)
 ```
+
+## Ordem de Precedência
+
+### ordem 1
+```py
+() # parênteses
+```
+
+### ordem 2
+```py
+** # potência
+```
+
+### ordem 3
+```py
+* # multiplicação
+/ # divisão
+// # divisão inteira
+% # resto da divisão
+```
+
+### ordem 4
+```py
++ # soma
+- # subtração
+```
