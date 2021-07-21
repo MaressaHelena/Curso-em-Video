@@ -12,3 +12,4 @@ print(f'É alfa numérico?: {n.isalnum()}')
 print(f'É alfa?: {n.isalpha()}')
 print(f'Todas as letras são maiúsculas?: {n.isupper()}')
 print('Fim!')
+
