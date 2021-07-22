@@ -1,63 +1,76 @@
+# Tipos Primitivos
+
+ Existem basicamente 4 tipos primitivos em python, são eles:
+
+- `int =` números inteiros (7, 4, -2)
+- `float =` números reais ou de ponto flutuante (4.5, 7.8, 0.076, 7.0)
+- `bool =` valores lógicos ou boleanos (True ou False; ao trabalhar com bool, sempre usar a primeira letra como maiuscula)
+- `str =` caracteres ou strings como: 'Olá', '7.5' ; sempre com uso de aspas (optar por aspas simples), ' ' (string vazia)
+
+Podemos formatar o print utilizando o `.format()`
+o `.format()` cria uma espécie de mascára e é sempre lido em ordem.
 ```py
-# >>> tipos primitivos
+print(f'A soma vale {a variavel desejada}')
+```
 
-# Existem basicamente 4 tipos primitivos em python, são eles:
+## Reconhecendo o tipo primitivo com `type()`
+Se eu fosse rodar esse código, o que iria imprimir seria **<class 'str'>** isso porque o tipo primitivo de uma _variável_ precisa ser especificado.
 
-int = números inteiros # e.g.: 7, 4, -2
-float = números reais ou de ponto flutuante # e.g.: 4.5, 7.8, 0.076, 7.0
-bool = valores lógicos ou boleanos # True ou False ; ao trabalhar com bool, sempre usar a primeira letra como maiuscula
-str = caracteres ou strings # 'Olá', '7.5' ; sempre com uso de aspas (optar por aspas simples), '' (string vazia)
-########################################################################################################################
-
-
-# podemos formatar o print utilizando o format()
-print(f'A soma vale {a variavel desejada}') # o format ele cria uma espécie de mascara e é sempre lido em ordem.
-
-# Para eu saber o tipo primitivo de alguma coisa, é preciso usar a função type()
-
+```py
 n1 = input('Digite um valor: ')
-print(type(n1)) # se eu fosse rodar esse código, o que iria imprimir seria <class 'str'> isso porque o tipo primitivo de uma variavel precisa ser especificado.
+print(type(n1)) 
+```
 
+Aqui imprime **<class 'int'>** pois eu determinei o tipo primitivo
+```py
 n1 = int(input('Digite um valor: '))
-print(type(n1)) # aqui imprime <class 'int'> pois eu determinei o tipo primitivo.
+print(type(n1))
+```
 
+Aqui vai depender do seguinte, boleano só retorna **True** ou **False**, se eu botar um número qualquer, por exemplo, 7, ele vai retornar **True** porque ele vai entender que sim, existe algo armazenado na variável. Se eu botar nada, ele vai retornar **False**
+```py
 n1 = bool(input('Digite um valor: '))
-print(type(n1)) # aqui vai depender do seguinte, boleano só retorna True ou False, se eu botar um numero qualquer, por exemplo, 7, ele vai retornar True porque ele vai entender que sim, existe algo armazenado na variavel. Se eu botar nada, ele vai retornar False.
-
-###########################################################################################################################
-
-# >>> função .isnumeric()
-
-# caso eu digite: 
-n = input('Digite algo: ')
-print(n.isnumeric()) # se eu digitar 'Oi', ele vai retornar False e claro... Oi não é númerico.
-
-n = input('Digite algo: ')
-print(n.isnumeric()) # caso eu digite 5: True. Afinal, 5 é numérico
-
-############################################################################################################################
-
-# >>> função .isalpha()
-
-# caso eu digite: 
-n = input('Digite algo: ')
-print(n.isalpha()) # se eu digitar 'w', sim, é letra.
-
-n = input('Digite algo: ')
-print(n.isalpha()) # caso eu digite: 3a. False. O 3 é numerico 
-
-############################################################################################################################
- # >>> função .isalnum()
+print(type(n1))
+```
+***
+##  Funções do tipo `.is`
  
- # caso eu digite:
+- `.isnumeric()`
+Caso eu digite 
+```py
+# se eu digitar "Oi", ele vai retornar False e claro... "Oi" não é númerico.
 n = input('Digite algo: ')
-print(n.isalnum()) # se eu digitar: 3a. Vai retornar True, pois '3a' é alfa numerico, (3 é numerico e a é alfa(letra))
-
-############################################################################################################################
- # >>> função .isupper()
-
-# caso eu digite:
-
+print(n.isnumeric()) 
+```
+Caso eu digite 5: **True**. Afinal, 5 é numérico
+```py
 n = input('Digite algo: ')
-print(n.isupper()) # .isupper verifica se a informação que eu inseri foi escrita com letras maiusculas. Caso sim, o output dará True
+print(n.isnumeric())
+``` 
+- `.isalpha()`
+
+Caso eu digite "w": retorna **True**
+```py
+n = input('Digite algo: ')
+print(n.isalpha())
+```
+Caso eu digite: 3a. **False**. O 3 é numérico 
+```py
+n = input('Digite algo: ')
+print(n.isalpha())
+```
+- `.isalnum()`
+
+Caso eu digite: 3a. Vai retornar **True**, pois '3a' é alfanumérico, (**3** é numérico e **a** é alfa(letra))
+```py
+n = input('Digite algo: ')
+print(n.isalnum())
+```
+- `.isupper()`
+
+Verifica se a informação que eu inseri foi escrita com letras maiúsculas. Caso sim, o output dará **True**
+
+```py
+n = input('Digite algo: ')
+print(n.isupper())
 ```
