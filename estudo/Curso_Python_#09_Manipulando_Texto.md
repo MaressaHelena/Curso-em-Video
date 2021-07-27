@@ -155,5 +155,38 @@ elemento = frase.strip()
 print(elemento) # retorna 'Curso Em Video Python'
 ```
 
+- `frase.rstrip()`
+Remove todos os espaços à direita
+```py
+frase = '   Curso em Video Python  '
+elemento = frase.rstrip()
+print(elemento) # retorna '   Curso Em Video Python'
+```
 
+- `frase.lstrip()`
+Remove todos os espaços à esquerda
+```py
+frase = '   Curso em Video Python  '
+elemento = frase.lstrip()
+print(elemento) # retorna 'Curso Em Video Python  '
+```
 
+### Divisão
+Existe algumas formas de se dividir strings, serão mostradas abaixo
+
+- `frase.split()`
+O comando `frase.split()` vai trabalhar mais nos espaços, por padrão. Vai ocorrer uma divisão entre as strings considerando os espaços.
+
+```py
+frase = 'Curso em Video Python'
+elemento = frase.split()
+print(elemento) # retorna ['Curso', 'em', 'Video', 'Python'], cria uma lista de cada "split"
+```
+### Junção
+De forma análoga à divisão, o comando `'-'.join(frase)` une a string fazendo aparecer na cadeira de caracteres o '-'
+
+```py
+frase = 'Curso em Video Python
+elemento = '-'.join(frase)
+print(elemento) # retorna Curso-em-Video-Python
+```
