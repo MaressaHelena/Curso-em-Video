@@ -154,3 +154,6 @@ frase = '   Curso em Video Python  '
 elemento = frase.strip()
 print(elemento) # retorna 'Curso Em Video Python'
 ```
+
+
+
