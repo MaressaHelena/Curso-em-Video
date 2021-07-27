@@ -97,7 +97,7 @@ print(elemento) # haverá o retorno do número 11, pois é onde 'deo' começa
 frase = 'Curso em Video Python'
 elemento = frase.find('Android')
 print(elemento) # haverá o retorno do número -1, pois 'Android' não existe na string 'Curso em Video Python'
-
+```
 ### Usando operador `in`
 Será que existe o termo **Curso** contido na variável `frase =`? O `in` servirá para responder isso com **True** ou **False**
 ```py
