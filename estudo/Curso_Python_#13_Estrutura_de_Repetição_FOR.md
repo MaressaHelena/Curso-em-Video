@@ -59,3 +59,8 @@ print('fim')
             s += n
         print(f'O SOMATÓRIO DE TODOS OS VALORES É: {s}')
         ```
+***
+
+# Estrutura de Repetição: While
+
+Também conhecido como estrutura de repetição com teste lógico. Isso se da ao fato de que, diferente do `for`, não há necessidade de saber o limite, o mais importante é saber quando termina. 
